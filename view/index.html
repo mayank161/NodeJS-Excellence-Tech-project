@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="candidate">
+        <div>
+            <label>Name</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="in">Email</label>
+            <input type="email">
+        </div>
+        <div>
+            <label for="">Address</label>
+            <input type="text">
+        </div>
+        <button onclick="createUser(event)">submit info</button>
+    </div>
+
+    <div id="test">
+        <h1>Enter/update your test Score</h1>
+        <p><B>NOTE:</B> Test scores should ranges between 0 to 10</p>
+        <div>
+            test1 <input type="number" min="0" max="10">
+            test2 <input type="number" min="0" max="10">
+            test3 <input type="number" min="0" max="10">
+            <button onclick="testScore(event)"> submit test scores </button>
+        </div>
+    </div>
+
+    <div class="score">
+        <button onclick="findMax()">findMax</button>
+        <p id="max"></p>
+    </div>
+
+    <div class="score">
+        <button onclick="findAverage()">findAverage</button>
+        <p id="avg"></p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
